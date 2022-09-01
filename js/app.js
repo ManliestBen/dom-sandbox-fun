@@ -10,7 +10,7 @@ let selectedColor
 
 /*--------- Cached Element References ------------*/
 let colorSquareContainer = document.getElementById('square-container')
-let selectedColorSquare = document.getElementById('selected-color-container')
+let selectedColorSquare = document.getElementById('selected-color')
 console.log(selectedColorSquare)
 
 
@@ -39,8 +39,10 @@ colors.forEach(color => {
 function init() {
   // setting state variables to initial state
   selectedColor = 'cornflowerblue'
+  render()
 }
 
 function render() {
   // display updated state
+  selectedColorSquare.style.backgroundColor = selectedColor
 }
