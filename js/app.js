@@ -11,19 +11,26 @@ let selectedColor
 /*--------- Cached Element References ------------*/
 let colorSquareContainer = document.getElementById('square-container')
 let selectedColorSquare = document.getElementById('selected-color')
-console.log(selectedColorSquare)
 
 
 
 /*---------- Event Listeners -----------------*/
-
+colorSquareContainer.addEventListener('click', handleClickColor)
 
 
 /*----------------- Functions -------------------*/
 
 init()
 
-console.log(selectedColor)
+
+function handleClickColor(evt) {
+  // determine which square was clicked
+  // get the color from that square 
+  // set selectedColor to that color
+  selectedColor = evt.target.style.backgroundColor
+  render()
+}
+
 
 // loop through the colors array
 colors.forEach(color => {
