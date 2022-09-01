@@ -7,6 +7,11 @@ body {
   height: 30px;
 }
 
+#selected-color {
+  width: 100px;
+  height: 100px;
+}
+
 .container {
   display: flex;
   justify-content: center;

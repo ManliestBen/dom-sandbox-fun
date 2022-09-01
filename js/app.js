@@ -1,8 +1,29 @@
+/*-------------------- Constants --------------------*/
 let colors = ['cornflowerblue', 'red', 'tan', 'fuchsia', 'blanchedalmond', 'mediumspringgreen', 'rebeccapurple','thistle','papayawhip', 'lime']
 
-let colorSquareContainer = document.querySelector('.container')
 
-console.log(colorSquareContainer);
+
+/*----------------- Variables (state) -------------*/
+let selectedColor
+
+
+
+/*--------- Cached Element References ------------*/
+let colorSquareContainer = document.getElementById('square-container')
+let selectedColorSquare = document.getElementById('selected-color-container')
+console.log(selectedColorSquare)
+
+
+
+/*---------- Event Listeners -----------------*/
+
+
+
+/*----------------- Functions -------------------*/
+
+init()
+
+console.log(selectedColor)
 
 // loop through the colors array
 colors.forEach(color => {
@@ -14,3 +35,12 @@ colors.forEach(color => {
   // append div to a container element
   colorSquareContainer.appendChild(newDiv)
 })
+
+function init() {
+  // setting state variables to initial state
+  selectedColor = 'cornflowerblue'
+}
+
+function render() {
+  // display updated state
+}
